@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server "35.154.84.42", user: "deploy", roles: %w{app db web}, my_property: :my_value
+server "35.154.84.42", user: "ubuntu", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
@@ -43,8 +43,8 @@ server "35.154.84.42", user: "deploy", roles: %w{app db web}, my_property: :my_v
 # --------------
  set :ssh_options, {
    keys: %w(/Users/anurag/.ssh/id_rsa),
-   forward_agent: false,
-   auth_methods: %w(publickey password)
+   forward_agent: true,
+   auth_methods: %w(publickey)
  }
 #
 # The server-based syntax can be used to override options:

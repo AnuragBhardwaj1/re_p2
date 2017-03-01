@@ -29,3 +29,5 @@ gem 'spree_auth_devise'
 gem 'spree_gateway'
 gem 'spree_reffiliate', github: 'vinsol-spree-contrib/spree_reffiliate', branch: 'commission_transaction'
 gem 'letter_opener'
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
+
