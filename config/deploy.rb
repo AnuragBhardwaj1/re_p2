@@ -1,9 +1,9 @@
 # config valid only for current version of Capistrano
 lock "3.7.2"
 
+set :rvm_ruby_version, '2.3.0'
 set :application, "re_p2"
 set :repo_url, "git@github.com:AnuragBhardwaj1/re_p2.git"
-
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
